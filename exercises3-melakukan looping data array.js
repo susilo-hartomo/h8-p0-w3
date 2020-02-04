@@ -56,24 +56,22 @@ dataHandling(input);
 // CARA KEDUA
 function dataHandling1(params) {
     for (let i = 0; i < params.length; i++) {
-        temp1 = ''
+
         for (let j = 0; j < 4; j++) {
             switch (j) {
                 case 0:
-                    temp1 += `Nomor ID : ${params[i][j]}`
+                    console.log(`Nomor ID : ${params[i][j]}`);
                     break;
                 case 1:
-                    temp1 += `Nama Lengkap : ${params[i][j]}`
+                    console.log(`Nama Lengkap : ${params[i][j]}`);
                     break;
                 case 2:
-                    temp1 += `TTL : ${params[i][j]} ${params[i][j + 1]}`
+                    console.log(`TTL : ${params[i][j]} ${params[i][j + 1]}`);
                     break;
                 case 3:
-                    temp1 += `Hobi : ${params[i][j + 1]}`
+                    console.log(`Hobi : ${params[i][j + 1]}`);
                     break;
             }
-            console.log(temp1)
-            temp1 = ''
         }
         console.log('')
     }
