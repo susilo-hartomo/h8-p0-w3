@@ -4,6 +4,8 @@
 //splice (indek star, banyak item di delete, item ditambahkan (itm1, itm2, ...))
 //split(tandan yang memisahkan,bayak item yang mau diambil)
 //join(menggabungkan item array, tanda pemisah)
+//mengutkan(besar,kesil) jika number dalam string berdasrkan angka paling depan
+//slice(mengambil string dari-n, sampai-m)
 
 /**
  * keluaran yang diharapkan (pada console)
@@ -21,6 +23,7 @@ var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca
 function dataHandling2(params) {
     params.splice(1, 2, 'Roman Alamsyah Elsyarawi', 'Provisi Bandar Lampung')
     params.splice(4, 1, 'Pria', 'SMA Internasional Metro')
+    console.log('splice mengganti atau menambahkan komponen')
     console.log(params)
     console.log('')
 
@@ -75,20 +78,16 @@ function dataHandling2(params) {
     }
 
 
-    var pengaturanTanggal = []
-    for (let j = 0; j < bulan.length; j++) {
-        pengaturanTanggal.push(Number(bulan[j]))
-    }
-
-    console.log('')
-    console.log(pengaturanTanggal.sort());
+    console.log('');
+    console.log('sort mengurutkan nilai dari angka terbesar')
+    console.log(bulan.sort((a, b) => b - a));
     console.log('');
 
-    console.log('');
+    console.log('join dengan tanda hubung \'-\' ');
     console.log(bulan.join('-'))
     console.log('')
 
-    console.log('');
+    console.log('slice 15 huruf pertama');
     console.log(params[1].slice(0, 15))
     console.log('')
 
