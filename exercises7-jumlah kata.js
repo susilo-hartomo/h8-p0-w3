@@ -34,3 +34,31 @@ console.log(hitungJumlahKata1('Never eat shredded wheat or cake')); // 6
 console.log(hitungJumlahKata1('A song to sing')); // 4
 console.log(hitungJumlahKata1('I')); // 1
 console.log(hitungJumlahKata1('I believe I can code')); // 5
+
+
+
+//CARA 3
+function hitungJumlahKata1(kalimat) {
+    // you can only write your code here!
+    temp = []
+    kata = ''
+    for (let i = 0; i < kalimat.length; i++) {
+        if (kalimat[i] == ' ') {
+            temp.push(kata)
+            kata = ''
+        } else {
+            kata += kalimat[i]
+        }
+    }
+    temp.push(kata)
+    return temp.length
+}
+
+// TEST CASES
+// TEST CASES CARA 2
+console.log('======== CARA 3 ===========');
+console.log(hitungJumlahKata1('I have a dream')); // 4
+console.log(hitungJumlahKata1('Never eat shredded wheat or cake')); // 6
+console.log(hitungJumlahKata1('A song to sing')); // 4
+console.log(hitungJumlahKata1('I')); // 1
+console.log(hitungJumlahKata1('I believe I can code')); // 5

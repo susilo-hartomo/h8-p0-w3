@@ -11,6 +11,7 @@ function pasanganTerbesar(num) {
         temp.push(stringAngka[i] + stringAngka[i + 1])
     }
 
+    console.log(temp);
 
     temp1 = ''
     for (let j = 0; j < temp.length; j++) {
@@ -23,6 +24,10 @@ function pasanganTerbesar(num) {
                 temp[k] = temp1
                 // console.log(temp[k]);
                 temp1 = ''
+                // console.log('Tahap ke: ', j, k);
+                // console.log(temp);
+                // console.log('============');
+                // console.log(' ');
             }
         }
 

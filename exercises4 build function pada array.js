@@ -77,15 +77,15 @@ function dataHandling2(params) {
             break;
     }
 
-
     console.log('');
+    console.log('join dengan tanda hubung \'-\' ');
+    console.log(bulan.join('-'))
+    console.log('')
+
     console.log('sort mengurutkan nilai dari angka terbesar')
     console.log(bulan.sort((a, b) => b - a));
     console.log('');
 
-    console.log('join dengan tanda hubung \'-\' ');
-    console.log(bulan.join('-'))
-    console.log('')
 
     console.log('slice 15 huruf pertama');
     console.log(params[1].slice(0, 15))
