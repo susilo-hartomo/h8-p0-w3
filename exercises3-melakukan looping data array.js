@@ -79,6 +79,3 @@ function dataHandling1(params) {
 
 console.log('==========CARA KEDUA==========');
 dataHandling1(input);
-
-
-
