@@ -28,7 +28,7 @@ function pasanganTerbesar(num) {
 
     }
 
-    console.log(temp);
+    // console.log(temp);
     return temp[0]
 }
 
