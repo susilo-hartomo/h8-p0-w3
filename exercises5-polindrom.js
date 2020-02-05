@@ -4,15 +4,7 @@ function palindrome(kata) {
     for (let i = 0; i < kata.length; i++) {
         temp += kata[kata.length - i - 1]
     }
-
-    // if (kata === temp) {
-    //     return true
-    // } else {
-    //     return false
-    // }
-
     return kata === temp
-
 }
 
 // TEST CASES
