@@ -10,7 +10,25 @@ function pasanganTerbesar(num) {
     for (let i = 0; i < stringAngka.length - 1; i++) {
         temp.push(stringAngka[i] + stringAngka[i + 1])
     }
-    temp.sort((a, b) => (b - a))
+
+
+    temp1 = ''
+    for (let j = 0; j < temp.length; j++) {
+        for (let k = 0; k < temp.length; k++) {
+            if (temp[j] > temp[k]) {
+                temp1 += temp[j]
+                // console.log(temp1);
+                temp[j] = temp[k]
+                // console.log(temp[j]);
+                temp[k] = temp1
+                // console.log(temp[k]);
+                temp1 = ''
+            }
+        }
+
+    }
+
+    console.log(temp);
     return temp[0]
 }
 
