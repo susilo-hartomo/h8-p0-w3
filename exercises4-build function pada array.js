@@ -1,4 +1,3 @@
-<<<<<<< HEAD:exercises4-build function pada array.js
 // MENGGUNAKAN BUILD FUNCTION BERIKUT INI
 // join, split, slice, splice, dan sort.
 
