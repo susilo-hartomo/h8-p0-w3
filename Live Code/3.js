@@ -63,7 +63,7 @@ function countStaf(line, params) {
     temp_letter = ''
 
     for (let i = 0; i < line.length; i++) {
-        if (Number(line[i]) + temp_sigma > 0) {
+        if (Number(line[i]) + temp_sigma >= 0) {
             temp_sigma += Number(line[i])
             temp_length++
         }
